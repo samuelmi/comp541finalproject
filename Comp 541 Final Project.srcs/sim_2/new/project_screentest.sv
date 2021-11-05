@@ -52,7 +52,7 @@ module project_screentest;
     wire [31:0] ReadData1      =uut.mips.dp.rd1_out;       // Reg[rs]
     wire [31:0] ReadData2      =uut.mips.dp.rd2_out;       // Reg[rt]
     wire [31:0] alu_result     =uut.mips.dp.alu_result;      // ALU's output
-    wire [31:0] signImm        =uut.mips.dp.signImm;         // sign-/zero-extended immediate
+    wire [31:0] signImm        =uut.mips.dp.sgnext_out;         // sign-/zero-extended immediate
     wire [31:0] aluA           =uut.mips.dp.aluA;            // operand A for ALU
     wire [31:0] aluB           =uut.mips.dp.aluB;            // operand B for ALU
 
@@ -93,8 +93,8 @@ module project_screentest;
     wire [3:0] blue            =uut.blue;
     wire [9:0] x               =uut.display.x;
     wire [9:0] y               =uut.display.y;
-    wire [$clog2(bmem_size)-1:0] bmem_addr =uut.display.bmem_addr;
-    wire [11:0] bmem_color     =uut.display.bmem_color;
+    wire [$clog2(bmem_size)-1:0] bmem_addr =uut.display.bitmap_addr;
+    wire [11:0] bmem_color     =uut.display.color_value;
 
     // Other I/O signals (sound and lights) inside top-level module uut
     wire [31:0] period         =uut.period;                // period for sound module

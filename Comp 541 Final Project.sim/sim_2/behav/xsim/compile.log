@@ -1,4 +1,64 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/imports/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/sources/accelerometer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module accelerometer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/new/add_sub_8bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addsub
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/new/adder.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/imports/new/comparator.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comparator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/new/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/new/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/new/display8digit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display8digit
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/new/fulladder.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fulladder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/new/hexto7seg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hexto7seg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/new/io_register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module io_register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/new/keyboard.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keyboard
+WARNING: [VRFC 10-8426] non-net output port 'keyb_char' cannot be initialized at declaration in SystemVerilog mode [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/new/keyboard.sv:23]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/imports/sources_1/new/logical.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logical
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/new/memIO.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memIO
+WARNING: [VRFC 10-3467] initial value of parameter 'wordsize' is omitted [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/new/memIO.sv:23]
+WARNING: [VRFC 10-3467] initial value of parameter 'Nchars' is omitted [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/new/memIO.sv:24]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/new/memory_mapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_mapper
+WARNING: [VRFC 10-3467] initial value of parameter 'wordsize' is omitted [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/new/memory_mapper.sv:24]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/new/mips.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/new/montek_sound_Nexys4.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module montek_sound_Nexys4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/new/ram_module.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_module
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/new/register_file.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/imports/new/rom_module.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom_module
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/imports/sources_1/new/shifter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/new/sign_extend.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sign_extend
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/new/top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-311] analyzing module clockdivider_Nexys4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/new/two_port_ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module two_port_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/new/vgadisplaydriver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vgadisplaydriver
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/new/vgatimer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vgatimer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/new/xycounter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xycounter
+WARNING: [VRFC 10-8426] non-net output port 'x' cannot be initialized at declaration in SystemVerilog mode [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/new/xycounter.sv:7]
+WARNING: [VRFC 10-8426] non-net output port 'y' cannot be initialized at declaration in SystemVerilog mode [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/new/xycounter.sv:8]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sim_2/new/project_screentest.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module project_screentest
+INFO: [VRFC 10-311] analyzing module selfcheck_nopause

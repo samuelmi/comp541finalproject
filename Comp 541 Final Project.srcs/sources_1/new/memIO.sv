@@ -33,12 +33,13 @@ module memIO #( parameter wordsize, parameter dmem_size, parameter dmem_init,
     );
     
     wire [wordsize-1:0] smem_readdata, dmem_readdata;
+    wire [$clog2(Nchars)-1:0] smem_raw;
     
     wire lights_wr;
     wire sound_wr;
     wire smem_wr;
     wire dmem_wr;
-    
+        
     // Memory Mapper
     memory_mapper #(.wordsize(wordsize)) mem_map(.cpu_wr(cpu_wr), .cpu_addr(cpu_addr), .accel_val(accel_val), .keyb_char(keyb_char), 
         .smem_readdata(smem_readdata), .dmem_readdata(dmem_readdata), .cpu_readdata(cpu_readdata), .lights_wr(lights_wr),
@@ -57,9 +58,10 @@ module memIO #( parameter wordsize, parameter dmem_size, parameter dmem_init,
     
     // Screen Memory
     two_port_ram #(.Nloc(smem_size), .Dbits($clog2(Nchars)), .initfile(smem_init)) smem(.clock(clk), .wr(smem_wr), .addr1(cpu_addr), .addr2(vga_addr),
-        .dout1(smem_readdata), .dout2(vga_readdata));
+        .dout1(smem_raw), .dout2(vga_readdata));
    
-
+    // Padding smem_readdata with extra bits
+    assign smem_readdata = {{(wordsize - $clog2(Nchars))*{1'b0}}, smem_raw}; 
     
     
 endmodule

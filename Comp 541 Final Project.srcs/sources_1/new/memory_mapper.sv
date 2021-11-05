@@ -21,7 +21,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module memory_mapper #(parameter wordsize = 32)(
+module memory_mapper#( parameter wordsize)(
     input wire cpu_wr,
     input wire [wordsize-1:0] cpu_addr,
     input wire [wordsize-1:0] accel_val,

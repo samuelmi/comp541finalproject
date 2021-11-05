@@ -6,15 +6,58 @@ Starting static elaboration
 Pass Through NonSizing Optimizer
 WARNING: [VRFC 10-2861] module 'datapath' does not have a parameter named Nreg [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/new/mips.sv:51]
 WARNING: [VRFC 10-8389] size mismatch in mixed language port association, VHDL port 'reset' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/sources/accelerometer.sv:27]
-ERROR: [VRFC 10-2991] 'ReadData1' is not declared under prefix 'dp' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sim_2/new/project_screentest.sv:52]
-ERROR: [VRFC 10-2991] 'ReadData2' is not declared under prefix 'dp' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sim_2/new/project_screentest.sv:53]
-ERROR: [VRFC 10-2991] 'signImm' is not declared under prefix 'dp' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sim_2/new/project_screentest.sv:55]
-ERROR: [VRFC 10-2991] 'bmem_addr' is not declared under prefix 'display' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sim_2/new/project_screentest.sv:96]
-ERROR: [VRFC 10-2991] 'bmem_color' is not declared under prefix 'display' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sim_2/new/project_screentest.sv:97]
 WARNING: [VRFC 10-3091] actual bit length 30 differs from formal bit length 10 for port 'addr' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/new/top.sv:73]
-WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 32 for port 'WriteData' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/new/memIO.sv:49]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 10 for port 'addr' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/new/memIO.sv:56]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'addr1' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/new/memIO.sv:59]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 6 for port 'dout1' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/new/memIO.sv:60]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 32 for port 'WriteData' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/new/memIO.sv:50]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 10 for port 'addr' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/new/memIO.sv:57]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'addr1' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/new/memIO.sv:60]
 WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'X' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/new/display8digit.sv:45]
-ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+WARNING: [VRFC 10-5021] port 'ps2_data' is not connected on this instance [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sim_2/new/project_screentest.sv:105]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/imports/sources_1/new/ALU.sv" Line 2. Module ALU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/imports/sources_1/new/ALU.sv" Line 2. Module ALU doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.math_real
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.sign_extend
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.fulladder
+Compiling module xil_defaultlib.adder_default
+Compiling module xil_defaultlib.addsub
+Compiling module xil_defaultlib.shifter
+Compiling module xil_defaultlib.logical
+Compiling module xil_defaultlib.comparator
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.mips
+Compiling module xil_defaultlib.rom_module(Nloc=1024,Dbits=32,in...
+Compiling module xil_defaultlib.memory_mapper(wordsize=32)
+Compiling module xil_defaultlib.io_register
+Compiling module xil_defaultlib.ram_module(Nloc=1024,Dbits=32,in...
+Compiling module xil_defaultlib.two_port_ram(Nloc=1200,Dbits=6,i...
+Compiling module xil_defaultlib.memIO(wordsize=32,dmem_size=1024...
+Compiling module xil_defaultlib.xycounter(width=800,height=525)
+Compiling module xil_defaultlib.vgatimer
+Compiling module xil_defaultlib.rom_module(Nloc=16384,Dbits=12,i...
+Compiling module xil_defaultlib.vgadisplaydriver(Nchars=64,bmem_...
+Compiling module xil_defaultlib.keyboard
+Compiling architecture behavioral of entity xil_defaultlib.SPI_If [spi_if_default]
+Compiling architecture behavioral of entity xil_defaultlib.ADXL362Ctrl [\ADXL362Ctrl(update_frequency_hz...]
+Compiling architecture behavioral of entity xil_defaultlib.AccelArithmetics [\AccelArithmetics(acc_x_y_max="0...]
+Compiling architecture behavioral of entity xil_defaultlib.AccelerometerCtl [accelerometerctl_default]
+Compiling module xil_defaultlib.accelerometer
+Compiling module xil_defaultlib.montek_sound_Nexys4
+Compiling module xil_defaultlib.hexto7seg
+Compiling module xil_defaultlib.display8digit
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.selfcheck_nopause_default
+Compiling module xil_defaultlib.project_screentest
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot project_screentest_behav

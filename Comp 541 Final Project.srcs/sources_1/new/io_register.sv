@@ -12,7 +12,7 @@ module io_register #(
    output wire [Dbits-1 : 0] ReadData
    );
 
-   logic [Dbits-1:0] rf;  
+   logic [Dbits-1:0] rf = 0;  
 
    always_ff @(posedge clock)                // Memory write: only when wr==1, and only at posedge clock
       if(wr)
