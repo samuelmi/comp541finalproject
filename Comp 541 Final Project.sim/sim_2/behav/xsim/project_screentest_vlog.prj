@@ -1,0 +1,36 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../Comp 541 Final Project.srcs/sources_1/new" \
+"../../../../Comp 541 Final Project.srcs/sources_1/imports/imports/sources_1/new/ALU.sv" \
+"../../../../Comp 541 Final Project.srcs/sources_1/imports/sources/accelerometer.sv" \
+"../../../../Comp 541 Final Project.srcs/sources_1/imports/new/add_sub_8bit.sv" \
+"../../../../Comp 541 Final Project.srcs/sources_1/imports/new/adder.sv" \
+"../../../../Comp 541 Final Project.srcs/sources_1/imports/imports/new/comparator.sv" \
+"../../../../Comp 541 Final Project.srcs/sources_1/imports/new/controller.sv" \
+"../../../../Comp 541 Final Project.srcs/sources_1/imports/new/datapath.sv" \
+"../../../../Comp 541 Final Project.srcs/sources_1/imports/new/display8digit.sv" \
+"../../../../Comp 541 Final Project.srcs/sources_1/imports/new/fulladder.sv" \
+"../../../../Comp 541 Final Project.srcs/sources_1/imports/new/hexto7seg.sv" \
+"../../../../Comp 541 Final Project.srcs/sources_1/new/io_register.sv" \
+"../../../../Comp 541 Final Project.srcs/sources_1/imports/new/keyboard.sv" \
+"../../../../Comp 541 Final Project.srcs/sources_1/imports/imports/sources_1/new/logical.sv" \
+"../../../../Comp 541 Final Project.srcs/sources_1/new/memIO.sv" \
+"../../../../Comp 541 Final Project.srcs/sources_1/new/memory_mapper.sv" \
+"../../../../Comp 541 Final Project.srcs/sources_1/imports/new/mips.sv" \
+"../../../../Comp 541 Final Project.srcs/sources_1/new/montek_sound_Nexys4.sv" \
+"../../../../Comp 541 Final Project.srcs/sources_1/imports/new/ram_module.sv" \
+"../../../../Comp 541 Final Project.srcs/sources_1/imports/new/register_file.sv" \
+"../../../../Comp 541 Final Project.srcs/sources_1/imports/imports/new/rom_module.sv" \
+"../../../../Comp 541 Final Project.srcs/sources_1/imports/imports/sources_1/new/shifter.sv" \
+"../../../../Comp 541 Final Project.srcs/sources_1/imports/new/sign_extend.sv" \
+"../../../../Comp 541 Final Project.srcs/sources_1/imports/new/top.sv" \
+"../../../../Comp 541 Final Project.srcs/sources_1/new/two_port_ram.sv" \
+"../../../../Comp 541 Final Project.srcs/sources_1/imports/new/vgadisplaydriver.sv" \
+"../../../../Comp 541 Final Project.srcs/sources_1/imports/new/vgatimer.sv" \
+"../../../../Comp 541 Final Project.srcs/sources_1/imports/new/xycounter.sv" \
+"../../../../Comp 541 Final Project.srcs/sim_2/new/project_screentest.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

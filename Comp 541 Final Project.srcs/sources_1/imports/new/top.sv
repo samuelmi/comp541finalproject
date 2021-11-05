@@ -93,7 +93,7 @@ module top #(
 
    // Segmented display:  Use it for displaying anything for debugging purposes,
    //    e.g., keyb_char or accel_val or period, or even PC or instr or anything else.   
-   display8digit disp(.val(keyb_char), .clock(clk100), .segments, .digitselect);
+   display8digit disp(.val(keyb_char), .clk(clk100), .segments, .digitselect);
 
 endmodule
 

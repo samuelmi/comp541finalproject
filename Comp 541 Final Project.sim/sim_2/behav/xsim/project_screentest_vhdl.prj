@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Comp 541 Final Project.srcs/sources_1/imports/sources/ADXL362Ctrl.vhd" \
+"../../../../Comp 541 Final Project.srcs/sources_1/imports/sources/AccelArithmetics.vhd" \
+"../../../../Comp 541 Final Project.srcs/sources_1/imports/sources/AccelerometerCtl.vhd" \
+"../../../../Comp 541 Final Project.srcs/sources_1/imports/sources/SPI_If.vhd" \
+
+# Do not sort compile order
+nosort

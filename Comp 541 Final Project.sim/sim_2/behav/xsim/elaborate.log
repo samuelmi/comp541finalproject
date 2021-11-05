@@ -1,0 +1,20 @@
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto f6b12ddb387c4041937c0589b13acfa0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot project_screentest_behav xil_defaultlib.project_screentest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-2861] module 'datapath' does not have a parameter named Nreg [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/new/mips.sv:51]
+WARNING: [VRFC 10-8389] size mismatch in mixed language port association, VHDL port 'reset' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/sources/accelerometer.sv:27]
+ERROR: [VRFC 10-2991] 'ReadData1' is not declared under prefix 'dp' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sim_2/new/project_screentest.sv:52]
+ERROR: [VRFC 10-2991] 'ReadData2' is not declared under prefix 'dp' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sim_2/new/project_screentest.sv:53]
+ERROR: [VRFC 10-2991] 'signImm' is not declared under prefix 'dp' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sim_2/new/project_screentest.sv:55]
+ERROR: [VRFC 10-2991] 'bmem_addr' is not declared under prefix 'display' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sim_2/new/project_screentest.sv:96]
+ERROR: [VRFC 10-2991] 'bmem_color' is not declared under prefix 'display' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sim_2/new/project_screentest.sv:97]
+WARNING: [VRFC 10-3091] actual bit length 30 differs from formal bit length 10 for port 'addr' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/new/top.sv:73]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 32 for port 'WriteData' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/new/memIO.sv:49]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 10 for port 'addr' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/new/memIO.sv:56]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'addr1' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/new/memIO.sv:59]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 6 for port 'dout1' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/new/memIO.sv:60]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'X' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/new/display8digit.sv:45]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
