@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.sim/sim_1/behav/xsim/xsim.dir/memIO_test_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Fri Nov  5 13:10:49 2021" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Fri Nov  5 19:57:10 2021" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2021.1 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "3247384" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "3002dc73-f326-47f4-b88a-3bdfed3dac36" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "f6b12ddb387c4041937c0589b13acfa0" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "12" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "16" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Windows Server 2016 or Windows 10" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "AMD Ryzen 9 3900X 12-Core Processor            " -context "user_environment"
@@ -26,7 +26,7 @@ webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
 webtalk_add_data -client xsim -key runtime -value "29 ns" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "0" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "0.00_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "7448_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 2882954861 -regid "" -xml C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.sim/sim_1/behav/xsim/xsim.dir/memIO_test_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.sim/sim_1/behav/xsim/xsim.dir/memIO_test_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.sim/sim_1/behav/xsim/xsim.dir/memIO_test_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Time -value "0.01_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "7436_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 1401379811 -regid "" -xml C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.sim/sim_1/behav/xsim/xsim.dir/memIO_test_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.sim/sim_1/behav/xsim/xsim.dir/memIO_test_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.sim/sim_1/behav/xsim/xsim.dir/memIO_test_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate
