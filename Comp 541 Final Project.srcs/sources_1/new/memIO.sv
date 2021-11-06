@@ -39,6 +39,12 @@ module memIO #( parameter wordsize, parameter dmem_size, parameter dmem_init,
     wire sound_wr;
     wire smem_wr;
     wire dmem_wr;
+    
+    wire [$clog2(smem_size)-1:0] trimmed_smem_addr; // Stores the trimmed address for smem
+    wire [$clog2(dmem_size)-1:0] trimmed_dmem_addr; // Stores the trimmed address for dmem
+    
+    assign trimmed_smem_addr = cpu_addr[$clog2(smem_size) + 1:2];
+    assign trimmed_dmem_addr = cpu_addr[$clog2(dmem_size) + 1:2];
         
     // Memory Mapper
     memory_mapper #(.wordsize(wordsize)) mem_map(.cpu_wr(cpu_wr), .cpu_addr(cpu_addr), .accel_val(accel_val), .keyb_char(keyb_char), 
@@ -54,11 +60,11 @@ module memIO #( parameter wordsize, parameter dmem_size, parameter dmem_init,
                                             
     // RAM
     ram_module #(.Nloc(dmem_size), .Dbits(wordsize), .initfile(dmem_init)) dmem(.clock(clk), .wr(dmem_wr), 
-        .addr(cpu_addr), .din(cpu_writedata), .dout(dmem_readdata));
+        .addr(trimmed_dmem_addr), .din(cpu_writedata), .dout(dmem_readdata));
     
     // Screen Memory
-    two_port_ram #(.Nloc(smem_size), .Dbits($clog2(Nchars)), .initfile(smem_init)) smem(.clock(clk), .wr(smem_wr), .addr1(cpu_addr), .addr2(vga_addr),
-        .dout1(smem_raw), .dout2(vga_readdata));
+    two_port_ram #(.Nloc(smem_size), .Dbits($clog2(Nchars)), .initfile(smem_init)) smem(.clock(clk), .wr(smem_wr), .addr1(trimmed_smem_addr), .addr2(vga_addr),
+        .din(cpu_writedata), .dout1(smem_raw), .dout2(vga_readdata));
    
     // Padding smem_readdata with extra bits
     assign smem_readdata = {{(wordsize - $clog2(Nchars))*{1'b0}}, smem_raw}; 

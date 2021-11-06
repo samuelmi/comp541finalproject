@@ -1,0 +1,22 @@
+Time resolution is 1 ps
+#00 {cpu_readdata, lights_wr, sound_wr, smem_wr, dmem_wr} <= {32'hxxxxxxxx, 1'b0, 1'b0, 1'b0, 1'b0};
+#01 {cpu_readdata, lights_wr, sound_wr, smem_wr, dmem_wr} <= {32'h12345678, 1'b0, 1'b0, 1'b0, 1'b0};
+#02 {cpu_readdata, lights_wr, sound_wr, smem_wr, dmem_wr} <= {32'h56781234, 1'b0, 1'b0, 1'b0, 1'b0};
+#03 {cpu_readdata, lights_wr, sound_wr, smem_wr, dmem_wr} <= {32'h55555555, 1'b0, 1'b0, 1'b0, 1'b0};
+#04 {cpu_readdata, lights_wr, sound_wr, smem_wr, dmem_wr} <= {32'h55555555, 1'b0, 1'b0, 1'b0, 1'b1};
+#07 {cpu_readdata, lights_wr, sound_wr, smem_wr, dmem_wr} <= {32'h55555555, 1'b0, 1'b0, 1'b0, 1'b0};
+#08 {cpu_readdata, lights_wr, sound_wr, smem_wr, dmem_wr} <= {32'habcd1234, 1'b0, 1'b0, 1'b0, 1'b0};
+#09 {cpu_readdata, lights_wr, sound_wr, smem_wr, dmem_wr} <= {32'h1234abcd, 1'b0, 1'b0, 1'b0, 1'b0};
+#10 {cpu_readdata, lights_wr, sound_wr, smem_wr, dmem_wr} <= {32'h44444444, 1'b0, 1'b0, 1'b0, 1'b0};
+#11 {cpu_readdata, lights_wr, sound_wr, smem_wr, dmem_wr} <= {32'h44444444, 1'b0, 1'b0, 1'b1, 1'b0};
+#14 {cpu_readdata, lights_wr, sound_wr, smem_wr, dmem_wr} <= {32'h44444444, 1'b0, 1'b0, 1'b0, 1'b0};
+#15 {cpu_readdata, lights_wr, sound_wr, smem_wr, dmem_wr} <= {32'h24681234, 1'b0, 1'b0, 1'b0, 1'b0};
+#16 {cpu_readdata, lights_wr, sound_wr, smem_wr, dmem_wr} <= {32'h33333333, 1'b0, 1'b0, 1'b0, 1'b0};
+#17 {cpu_readdata, lights_wr, sound_wr, smem_wr, dmem_wr} <= {32'h13572468, 1'b0, 1'b0, 1'b0, 1'b0};
+#18 {cpu_readdata, lights_wr, sound_wr, smem_wr, dmem_wr} <= {32'h22222222, 1'b0, 1'b0, 1'b0, 1'b0};
+#20 {cpu_readdata, lights_wr, sound_wr, smem_wr, dmem_wr} <= {32'hxxxxxxxx, 1'b0, 1'b1, 1'b0, 1'b0};
+#21 {cpu_readdata, lights_wr, sound_wr, smem_wr, dmem_wr} <= {32'hxxxxxxxx, 1'b0, 1'b0, 1'b0, 1'b0};
+#22 {cpu_readdata, lights_wr, sound_wr, smem_wr, dmem_wr} <= {32'hxxxxxxxx, 1'b0, 1'b1, 1'b0, 1'b0};
+#23 {cpu_readdata, lights_wr, sound_wr, smem_wr, dmem_wr} <= {32'hxxxxxxxx, 1'b1, 1'b0, 1'b0, 1'b0};
+#24 {cpu_readdata, lights_wr, sound_wr, smem_wr, dmem_wr} <= {32'hxxxxxxxx, 1'b0, 1'b0, 1'b0, 1'b0};
+$finish called at time : 29 ns : File "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sim_1/new/mem_map_test.sv" Line 76

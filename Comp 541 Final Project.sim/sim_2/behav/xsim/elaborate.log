@@ -7,11 +7,9 @@ Pass Through NonSizing Optimizer
 WARNING: [VRFC 10-2861] module 'datapath' does not have a parameter named Nreg [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/new/mips.sv:51]
 WARNING: [VRFC 10-8389] size mismatch in mixed language port association, VHDL port 'reset' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/sources/accelerometer.sv:27]
 WARNING: [VRFC 10-3091] actual bit length 30 differs from formal bit length 10 for port 'addr' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/new/top.sv:73]
-WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 32 for port 'WriteData' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/new/memIO.sv:50]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 10 for port 'addr' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/new/memIO.sv:57]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'addr1' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/new/memIO.sv:60]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 32 for port 'WriteData' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/new/memIO.sv:56]
 WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'X' [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/new/display8digit.sv:45]
-WARNING: [VRFC 10-5021] port 'ps2_data' is not connected on this instance [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sim_2/new/project_screentest.sv:105]
+WARNING: [VRFC 10-5021] port 'ps2_data' is not connected on this instance [C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sim_2/new/project_screentest.sv:107]
 Completed static elaboration
 Starting simulation data flow analysis
 WARNING: [XSIM 43-4099] "C:/Users/samum/GitubRepository/Comp541/comp541finalproject/Comp 541 Final Project.srcs/sources_1/imports/imports/sources_1/new/ALU.sv" Line 2. Module ALU doesn't have a timescale but at least one module in design has a timescale.

@@ -84,6 +84,8 @@ module project_screentest;
     wire [31:0] cpu_addr       =uut.memIO.cpu_addr;
     wire [31:0] cpu_readdata   =uut.memIO.cpu_readdata;
     wire [31:0] cpu_writedata  =uut.memIO.cpu_writedata;
+    wire [charcode_size-1:0] smem_raw=uut.memIO.smem_raw;
+    wire [$clog2(smem_size)-1:0] trimmed_smem_addr=uut.memIO.trimmed_smem_addr;
    
     // Signals related to display driver (module vgadisplaydriver)
     wire hsync                 =uut.hsync;
@@ -139,7 +141,7 @@ module project_screentest;
    // SELF-CHECKING CODE
    
    selfcheck_nopause #(.Nchars(Nchars), .smem_size(smem_size)) c();
-
+    
     wire [31:0] c_pc=c.pc;
     wire [31:0] c_instr=c.instr;
     wire [31:0] c_mem_addr=c.mem_addr;
