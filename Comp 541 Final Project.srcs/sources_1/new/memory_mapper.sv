@@ -36,15 +36,17 @@ module memory_mapper#( parameter wordsize)(
     output wire dmem_wr
     );
     
-    assign lights_wr = (cpu_addr == 32'h1003_000c) ? cpu_wr : 0;
-    assign sound_wr = (cpu_addr == 32'h1003_0008) ? cpu_wr : 0;
-    assign smem_wr = (cpu_addr <= 32'h1002_12BC && cpu_addr >= 32'h1002_0000) ? cpu_wr : 0;
-    assign dmem_wr = (cpu_addr <= 32'h1001_0FFC && cpu_addr >= 32'h1001_0000) ? cpu_wr : 0;
+    assign lights_wr = (cpu_addr[17:16] == 2'b11 && cpu_addr[3:2] == 2'b11) ? cpu_wr : 0;
+    assign sound_wr = (cpu_addr[17:16] == 2'b11 && cpu_addr[3:2] == 2'b10) ? cpu_wr : 0;
+    assign smem_wr = (cpu_addr[17:16] == 2'b10) ? cpu_wr : 0;
+    assign dmem_wr = (cpu_addr[17:16] == 2'b01) ? cpu_wr : 0;
     
-    assign cpu_readdata = (cpu_addr == 32'h1003_0004) ? accel_val 
-                        : (cpu_addr == 32'h1003_0000) ? keyb_char
-                        : (cpu_addr <= 32'h1002_12BC && cpu_addr >= 32'h1002_0000) ? smem_readdata
-                        : (cpu_addr <= 32'h1001_0FFC && cpu_addr >= 32'h1001_0000) ? dmem_readdata
+    assign cpu_readdata = (cpu_addr[17:16] == 2'b11)  
+                            ? (cpu_addr[3:2] == 2'b01) ? accel_val 
+                            : (cpu_addr[3:2] == 2'b00) ? keyb_char
+                            : 32'hxxxx_xxxx
+                        : (cpu_addr[17:16] == 2'b10) ? smem_readdata
+                        : (cpu_addr[17:16] == 2'b01) ? dmem_readdata
                         : 32'hxxxx_xxxx;
     
     
